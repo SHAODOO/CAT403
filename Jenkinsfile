@@ -1,6 +1,8 @@
 pipeline{
 
-    agent any
+    agent{
+        label "window"
+    }
 
     stages{
         stage("Build"){
@@ -11,7 +13,7 @@ pipeline{
 
         stage("Test"){
             steps{
-                sh 'ifconfig'
+                sh 'ipconfig'
             }
         }
 
