@@ -11,7 +11,7 @@ pipeline{
 
         stage("Test"){
             steps{
-                sh 'ipconfig'
+                sh 'ifconfig'
             }
         }
 
