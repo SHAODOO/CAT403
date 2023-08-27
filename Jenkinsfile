@@ -1,32 +1,25 @@
 pipeline{
+
     agent any
+
     stages{
-        stage("A"){
+        stage("Build"){
             steps{
-                echo "========executing A========"
+                sh 'pwd'
             }
-            post{
-                always{
-                    echo "========always========"
-                }
-                success{
-                    echo "========A executed successfully========"
-                }
-                failure{
-                    echo "========A execution failed========"
-                }
+        }
+
+        stage("Test"){
+            steps{
+                sh 'ipconfig'
+            }
+        }
+
+        stage("Deploy"){
+            steps{
+                sh 'whoami'
             }
         }
     }
-    post{
-        always{
-            echo "========always========"
-        }
-        success{
-            echo "========pipeline executed successfully ========"
-        }
-        failure{
-            echo "========pipeline execution failed========"
-        }
-    }
+
 }
