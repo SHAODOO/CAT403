@@ -5,21 +5,22 @@ pipeline{
     }
 
     stages{
-        stage("Build"){
+        stage("Clone Git Repository"){
             steps{
-                sh 'pwd'
+                echi 'Clone Git Repository'
+                sh 'git clone https://github.com/SHAODOO/CAT403'
             }
         }
 
         stage("Test"){
             steps{
-                sh 'ipconfig'
+                echo 'Test'
             }
         }
 
         stage("Deploy"){
             steps{
-                sh 'whoami'
+                echo 'Deploy'
             }
         }
     }
