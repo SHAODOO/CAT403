@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Clone Git Repository"){
             steps{
-                echi 'Clone Git Repository'
+                echo 'Clone Git Repository'
                 sh 'git clone https://github.com/SHAODOO/CAT403'
             }
         }
