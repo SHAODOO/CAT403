@@ -3,6 +3,12 @@ pipeline{
     agent any
 
     stages{
+        stage("changeSets"){
+            steps{
+                echo "${currentBuild.changeSets}"
+            }
+        }
+        
         stage("Test"){
             steps{
                 echo 'Test'
