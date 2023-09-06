@@ -1,8 +1,6 @@
 pipeline{
 
-    agent{
-        label "window"
-    }
+    agent any
 
     stages{
         stage("Clone Git Repository"){
