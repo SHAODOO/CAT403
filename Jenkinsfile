@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Get Last Commit Details') {
+        stage('Get Commit Details') {
             steps {
                 script{
 
