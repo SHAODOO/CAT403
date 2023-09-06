@@ -3,13 +3,6 @@ pipeline{
     agent any
 
     stages{
-        stage("Clone Git Repository"){
-            steps{
-                echo 'Clone Git Repository'
-                sh 'git clone https://github.com/SHAODOO/ZeePort'
-            }
-        }
-
         stage("Test"){
             steps{
                 echo 'Test'
