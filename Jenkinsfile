@@ -1,10 +1,6 @@
 pipeline {
     agent {dockerfile true}
 
-    environment {
-                  HOME="."
-    }
-
     stages {
         stage('Get Commit Previous Details') {
             steps {
