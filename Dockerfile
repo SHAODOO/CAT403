@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM microsoft/windowsservercore:ltsc2019
 
 # Update packages and install curl
 RUN apt-get update && \
