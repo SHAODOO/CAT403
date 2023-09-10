@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/windows/nanoserver:ltsc2022'
+            image 'ubuntu'
         }
     }
 
