@@ -3,6 +3,9 @@ pipeline {
 
     stages {
         stage('Get Commit Previous Details') {
+            environment {
+                  HOME="."
+            }
             steps {
                 script{
 
