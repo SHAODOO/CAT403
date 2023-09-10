@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/windows:ltsc2019
+FROM python:3.11.5-windowsservercore-ltsc2022
