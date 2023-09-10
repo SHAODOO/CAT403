@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        image 'mcr.microsoft.com/windows/nanoserver:ltsc2022'
+        docker {
+            image 'mcr.microsoft.com/windows/nanoserver:ltsc2022'
+        }
     }
 
     stages {
