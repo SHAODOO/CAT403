@@ -1,1 +1,1 @@
-FROM microsoft/windowsservercore:ltsc2019
+FROM mcr.microsoft.com/windows:ltsc2019
