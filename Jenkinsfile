@@ -1,5 +1,7 @@
 pipeline {
-    agent {dockerfile true}
+    agent {
+        image 'mcr.microsoft.com/windows/nanoserver:ltsc2022'
+    }
 
     stages {
         stage('Get Commit Previous Details') {
